@@ -92,3 +92,12 @@ body {
     background-image: url(img/icono_detener.png);
 }
 
+#mascota-img {
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 20px auto;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
