@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e24;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-pomodoro {
+    background-color: #2a2a35;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 350px;
+}
+
+.modos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.modo-btn {
+    background: none;
+    border: none;
+    color: #a0a0a5;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3 ease;
+}
+
+.modo-btn:hover {
+    color: #ffffff;
+}
+
+.modo-btn.active {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
+.timer-display {
+    font-size: 80px;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+    margin: 20px 0 40px 0;
+    letter-spacing: 2px;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.ctrl-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    transition: transform 0.1s ease;
+}
+
+.ctrl-btn:active {
+    transform: scale(0.95);
+}
+
+#btn-inicio {
+    background-image: url(img/icono_inicio.png);
+}
+
+#btn-pausa {
+    background-image: url(img/icono_pausa.png);
+}
+
+#btn-reinicio {
+    background-image: url(img/icono_detener.png);
+}
+
